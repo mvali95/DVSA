@@ -9,7 +9,9 @@
     "build": "webpack -p --env production --mode production",
     "serve": "live-server public",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
-    "start": "webpack-dev-server --hot --inline --mode development"
+    "start": "webpack-dev-server --hot --inline --mode development",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "aws-amplify": "^1.1.17",
@@ -45,7 +47,8 @@
     "sass-loader": "7.0.1",
     "semantic-ui-react": "0.81.1",
     "validator": "10.2.0",
-    "webpack": "4.27.1"
+    "webpack": "4.27.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "6.24.1",
@@ -70,5 +73,6 @@
     "style-loader": "0.21.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "3.1.10"
-  }
+  },
+  "snyk": true
 }
