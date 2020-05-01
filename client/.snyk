@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T05:03:03.401Z'
+    - react-dates > lodash:
+        patched: '2020-05-01T05:03:03.401Z'
+    - react-redux > lodash:
+        patched: '2020-05-01T05:03:03.401Z'
+    - redux > lodash:
+        patched: '2020-05-01T05:03:03.401Z'
+    - semantic-ui-react > lodash:
+        patched: '2020-05-01T05:03:03.401Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2020-05-01T05:03:03.401Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2020-05-01T05:03:03.401Z'
